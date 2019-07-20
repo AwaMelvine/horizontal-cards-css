@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Details</title>
+    </head>
+    <body>
+        <h2>You clicked on image number: <b id="number"></b></h2>
+
+        <script>
+            const id = window.location.href.split('id=')[1]; // this id can be used to display info about that particular card on this page
+            document.querySelector('#number').textContent = id;
+    </script>
+    </body>
+</html>
